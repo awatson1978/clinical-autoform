@@ -2,5 +2,7 @@
 
 // Extend the schema options allowed by SimpleSchema
 SimpleSchema.extendOptions({
-  autoform: Match.Optional(Object)
+  autoform: Match.Optional(Object),
+  placeholder: Match.Optional(Match.OneOf(String, Function)),
+  inputType: Match.Optional(Match.OneOf(String, Function))
 });
